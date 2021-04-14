@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html, #container {
+    background-color: rgb(219, 219, 219);
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.list-element {
+
+    background-color: rgb(197, 197, 197);
+    height: 5%;
+    transition: 0.2s;
+
+}
+
+.list-element:hover {
+
+    background-color: rgb(79, 175, 70);
+    box-shadow: 0 2px rgb(88, 88, 88);
+    transition: 0.2s;
+
+}
+
+.list-element-name {
+
+    position: relative;
+    top: 20%;
+    left: 20px;
+    font-size: 20px;
+
+    width: fit-content;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6, li, a, label, button {
+    padding: 10px;
+}
+
+h2, h3, h4, h5, h6, .slim-input {
+    color: rgb(95, 95, 95);
+}
+
+ul {
+    list-style-type: square;
+    line-height: 80%;
+    color: black;
+    font-weight: normal;
+}
+
+.zp {
+    padding: 0;
+    color: rgb(74, 92, 131);
+}
+
+.functional-btn {
+    color: rgb(11, 68, 28);
+}
+
+label, input {
+    font-size: 24px;
+    border: none;
+    background-color: inherit;
+    width: 80%;
+}
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active, button
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.slim-input {
+    background-color: initial;
+    border: initial;
+    width: 40px;
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: right;
+    padding: 0.5%;
+}
+
+.btn {
+
+    font-size: 1.17em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    color: rgb(74, 92, 131);
+
+}
+
+#rec-ingr-add {
+    position: relative;
+    right: 0;
+    top: -1%;
+}
+
+.rec-list-recursive {
+    color: rgb(74, 92, 131);
+}
+
+.rec-list-recursive, .rec-list-normal {
+    cursor: pointer;
+}
+
+.rec-list-recursive:hover, .rec-list-normal:hover {
+    background-color: rgb(74, 92, 131);
+    color: rgb(219, 219, 219);
+}
+
+#rec-new-item-container {
+
+    background-color: rgb(197, 197, 197);
+    padding: 0;
+    width: 100%;
+
+}
+
+#rec-delete {
+    color: red;
+}
+
+.pad {
+    padding: 2%;
+}
