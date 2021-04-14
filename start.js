@@ -24,10 +24,7 @@ function createWindow() {
         }
     });
 
-    if (fs.existsSync(PLATFORM.CREDS_FILE_PATH))
-        win.loadFile("html/lista-przepisow.html");
-    else
-        win.loadFile("html/zarejestruj-sie.html");
+    win.loadFile("html/lista-przepisow.html");
     win.webContents.openDevTools();
 
 }
