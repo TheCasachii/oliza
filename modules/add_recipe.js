@@ -25,9 +25,18 @@ const pgp = parseGetParam(location.search);
 
 let edited = null;
 
+let recipes = loadRecipes();
+
+let datalist = getEl('recipes');
+
+recipes.forEach(r => {
+    let option = document.createElement('option');
+    option.value = `*${r.name}`;
+    datalist.appendChild(option);
+});
+
 if (typeof pgp.edit !== "undefined") {
 
-    let recipes = loadRecipes();
 
     const rec = recipes[pgp.edit];
 
