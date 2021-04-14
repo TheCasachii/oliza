@@ -1,0 +1,90 @@
+{
+	"Pages": {
+		"RecipeList": "Recipe list",
+		"ShowWeek": "Dish planner",
+		"ShoppingList": "Shopping list",
+		"ShowRecipe": "View recipe",
+		"ShowDay": "View day",
+		"EditDay": "Edit day",
+		"Register": "Register"
+	},
+	"UI": {
+		"GoToPlanner": "Go to dish planner",
+		"GoToRecipeList": "Go to recipe list",
+		"GoToShoppingList": "Shopping list",
+
+		"AddRecipe": "Add recipe",
+		"ShuffleDays": "Shuffle days",
+		"PrintPlanner": "Print planner",
+		"PrintShoppingList": "Print shopping list",
+
+		"Back": "Return",
+		"BackTo": "Return to",
+		"BackToList": "Return to list",
+		"List": "list",
+
+		"EditRecipe": "Edit recipe",
+		"DeleteRecipe": "Delete recipe",
+
+		"OlizaRegistration": "OLiZa - Register",
+		"RegDataPrompt": "Type in registration data",
+		"AlreadyRegisteredLogIn": "Already registered? Log in!",
+
+		"RegShortUname": "Username too short (min. 4 chars)",
+		"RegShortPass": "Password too short (min. 8 chars)",
+		"UnameTaken": "Username taken",
+
+		"EasyPeasyPassword": "Your password is easy peasy!",
+		"WeirdError": "Internal error",
+		"HackingAttempt": "Server hacking attempt detected.",
+
+		"Username": "Username",
+		"Password": "Password",
+		"Register": "Register",
+
+		"Change": "Change",
+		"Save": "Save",
+
+		"ConfirmMessage": "Press OK to confirm."
+	},
+	"Elements": {
+		"DayNames": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday",
+			"Saturday",
+			"Sunday"
+		],
+
+		"Day": "Day",
+		"Planner": "Weekly plan",
+		"ShoppingList":"Shopping list",
+
+		"Properties": "Properties",
+		"PrepTime": "Preparation time",
+		"Portions": "Portions",
+		"Ingredients": "Ingredients",
+
+		"DefaultRecipeName": "New recipe",
+
+		"Lunch": "Lunch",
+		"Dish1": "Soup",
+		"Dish2": "Main course",
+
+		"ShortDish1": "Soup",
+		"ShortDish2": "Main",
+
+		"Empty": "None",
+
+		"IngrName": "Name",
+		"IngrAmount": "Amount"
+	},
+	"Units": {
+		"Pieces": "pcs.",
+		"Hours": "h",
+		"Minutes": "min",
+		"Portions": ""
+	}
+}

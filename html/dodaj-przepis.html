@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowy przepis</title>
+    <link rel="stylesheet" href="../style/light.css">
+    <link rel="stylesheet" href="../style/dark.css">
+</head>
+<body>
+    
+    <h1>
+        <input type="text" name="rec-name" id="rec-name" value="Nowy przepis" placeholder="Nowy przepis" spellcheck="false">
+    </h1>
+
+    <a href="lista-przepisow.html" id="rec-go-back">[Powrót do listy]</a>
+
+    <h3><span id="PrepTime">Czas przygotowania</span><br />
+
+        <input type="text" name="rec-time-hr" id="rec-time-hr" value="1" class="slim-input" maxlength="2"> <span id="Hr">godz.</span>
+        <input type="text" name="rec-time-mi" id="rec-time-mi" value="0" class="slim-input" maxlength="2"> <span id="Mi">min.</span>
+    
+    </h3>
+
+    <h3><span id="Portions">Porcji:</span><br />
+
+        <input type="text" name="rec-peop" id="rec-peop" value="4", class="slim-input" maxlength="2"> <span id="Pe">osób.</span>
+
+    </h3>
+
+    <h3><span id="Ingr">Składniki</span><br />
+        <div id="rec-new-item-container">
+            <input type="text" name="rec-ingr-name" id="rec-ingr-name" spellcheck="false"><!-- <button id="rec-ingr-add" class="btn">+</button> -->
+        </div>
+        <ul id="rec-ingr-list"></ul>
+    </h3>
+
+    <a href="lista-przepisow.html" class="btn" id="rec-submit">Zapisz</a>
+
+    <script src="../modules/add_recipe.js"></script>
+</body>
+</html>

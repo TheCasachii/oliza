@@ -1,0 +1,90 @@
+{
+	"Pages": {
+		"RecipeList": "Lista przepisów",
+		"ShowWeek": "Pokaż jadłospis",
+		"ShoppingList": "Lista zakupów",
+		"ShowRecipe": "Pokaż przepis",
+		"ShowDay": "Podgląd dnia",
+		"EditDay": "Edytuj dzień",
+		"Register": "Zarejestruj się"
+	},
+	"UI": {
+		"GoToPlanner": "Przejdź do jadłospisu",
+		"GoToRecipeList": "Przejdź do listy",
+		"GoToShoppingList": "Lista zakupów",
+
+		"AddRecipe": "Dodaj przepis",
+		"ShuffleDays": "Pozamieniaj dni",
+		"PrintPlanner": "Drukuj jadłospis",
+		"PrintShoppingList": "Drukuj listę",
+
+		"Back": "Powrót",
+		"BackTo": "Powrót do",
+		"BackToList": "Powrót do listy",
+		"List": "listy",
+
+		"EditRecipe": "Edytuj przepis",
+		"DeleteRecipe": "Usuń przepis",
+
+		"Change": "Zmień",
+		"Save": "Zapisz",
+
+		"OlizaRegistration": "OLiZa - Rejestracja",
+		"RegDataPrompt": "Podaj dane do rejestracji",
+		"AlreadyRegisteredLogIn": "Już się rejestrowałeś? Zaloguj się!",
+
+		"RegShortUname": "Zbyt krótka nazwa użytkownika (min. 4 znaki)",
+		"RegShortPass": "Zbyt krótkie hasło (min. 8 znaków)",
+		"UnameTaken": "Nazwa użytkownika jest już zajęta",
+
+		"EasyPeasyPassword": "Twoje hasło jest banalne!",
+		"WeirdError": "Błąd wewnętrzny",
+		"HackingAttempt": "Wykryto próbę ataku na serwer.",
+
+		"Username": "Nazwa użytkownika",
+		"Password": "Hasło",
+		"Register": "Zarejestruj się",
+
+		"ConfirmMessage": "Naciśnij OK, aby potwierdzić."
+	},
+	"Elements": {
+		"DayNames": [
+			"Poniedziałek",
+			"Wtorek",
+			"Środa",
+			"Czwartek",
+			"Piątek",
+			"Sobota",
+			"Niedziela"
+		],
+
+		"Day": "Dzień",
+		"Planner": "Jadłospis",
+		"ShoppingList": "Lista zakupów",
+
+		"Properties": "Właściwości",
+		"PrepTime": "Czas przygotowania",
+		"Portions": "Ilość porcji",
+		"Ingredients": "Składniki",
+
+		"DefaultRecipeName": "Nowy przepis",
+
+		"Lunch": "Obiad",
+		"Dish1": "Zupa",
+		"Dish2": "Drugie danie",
+
+		"ShortDish1": "Zupa",
+		"ShortDish2": "Drugie",
+
+		"Empty": "Brak",
+
+		"IngrName": "Produkt",
+		"IngrAmount": "Ilość"
+	},
+	"Units": {
+		"Pieces": "szt.",
+		"Hours": "godz.",
+		"Minutes": "min.",
+		"Portions": "osób."
+	}
+}
