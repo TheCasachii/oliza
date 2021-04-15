@@ -1,17 +1,15 @@
-const { Menu, MenuItem } = require("electron");
-const fs = require("fs");
-const Locales = require("./locales");
-const { PLATFORM } = require("./platform");
-const Preferences = require("./preferences");
+const { Menu, MenuItem }    = require("electron")       ,
+      fs                    = require("fs")             ,
+      Locales               = require("./locales")      ,
+      { PLATFORM }          = require("./platform")     ,
+      Preferences           = require("./preferences")  ;
 
-const mainMenu = new Menu;
+const mainMenu              = new Menu                  ,
+      optionMenu            = new Menu                  ,
+      languageMenu          = new Menu                  ,
+      themeMenu             = new Menu                  ;
 
-const optionMenu = new Menu;
-
-const languageMenu = new Menu;
-const themeMenu = new Menu;
-
-const langs = fs.readdirSync(PLATFORM.LOCALES_DIR, { encoding: "utf-8", withFileTypes: false });
+const langs                 = fs.readdirSync(PLATFORM.LOCALES_DIR, { encoding: "utf-8", withFileTypes: false });
 
 langs.forEach(lang => {
     const lang_data = JSON.parse(fs.readFileSync(`${PLATFORM.LOCALES_DIR}${lang}`, { encoding: "utf-8", flag: 'r' }));
@@ -19,7 +17,7 @@ langs.forEach(lang => {
     languageMenu.append(new MenuItem({
         type: "radio",
         label: lang_data.Name,
-        checked: (lang_data.Name == Locales.Name),
+        checked: (lang_data.Name === Locales.Name),
         click: () => {
             Preferences.init();
             Preferences.set("Language", lang.split(".json").join(""));
@@ -33,7 +31,7 @@ Preferences.init();
 
 themeMenu.append(new MenuItem({
     type: "radio",
-    label: "Light",
+    label: Locales.Theme[0],
     checked: (Preferences.get("Theme") === 0),
     click: () => {
         Preferences.init();
@@ -44,7 +42,7 @@ themeMenu.append(new MenuItem({
 
 themeMenu.append(new MenuItem({
     type: "radio",
-    label: "Dark",
+    label: Locales.Theme[1],
     checked: (Preferences.get("Theme") === 1),
     click: () => {
         Preferences.init();
@@ -56,7 +54,8 @@ themeMenu.append(new MenuItem({
 optionMenu.append(new MenuItem({
     type: "submenu",
     submenu: languageMenu,
-    label: Locales.UI.LanguageMenu
+    label: Locales.UI.LanguageMenu,
+    icon: "icon/langmenu.png"
 }));
 
 optionMenu.append(new MenuItem({
@@ -65,9 +64,12 @@ optionMenu.append(new MenuItem({
     label: Locales.UI.ThemeMenu
 }));
 
-optionMenu.append(new MenuItem({
+const separator = new MenuItem({
     type: "separator"
-}));
+});
+
+optionMenu.append(separator);
+
 
 optionMenu.append(new MenuItem({
     label: Locales.UI.Quit,

@@ -1,5 +1,9 @@
 {
 	"Name": "Polski",
+	"Theme": [
+		"Jasna",
+		"Ciemna"
+	],
 	"Pages": {
 		"RecipeList": "Lista przepisów",
 		"ShowWeek": "Pokaż jadłospis",

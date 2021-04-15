@@ -1,5 +1,9 @@
 {
 	"Name": "English",
+	"Theme": [
+		"Light",
+		"Dark"
+	],
 	"Pages": {
 		"RecipeList": "Recipe list",
 		"ShowWeek": "Dish planner",
