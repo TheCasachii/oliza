@@ -1,7 +1,8 @@
 const getEl = require("../modules/getEl");
 const { loadRecipes, getRecipeIdByName, saveRecipes, parseGetParam } = require("../modules/parse_recipes");
-const { CURRENT_THEME } = require("../modules/theme");
 const Locales = require("../modules/locales");
+
+require("../modules/theme");
 
 const RECIPE_NAME_ID = "rec-name";
 
@@ -25,9 +26,18 @@ const pgp = parseGetParam(location.search);
 
 let edited = null;
 
+let recipes = loadRecipes();
+
+let datalist = getEl('recipes');
+
+recipes.forEach(r => {
+    let option = document.createElement('option');
+    option.value = `*${r.name}`;
+    datalist.appendChild(option);
+});
+
 if (typeof pgp.edit !== "undefined") {
 
-    let recipes = loadRecipes();
 
     const rec = recipes[pgp.edit];
 

@@ -2,6 +2,7 @@ const getEl = require("../modules/getEl");
 const { loadPlanner, PLANNER_DAYS, savePlanner } = require("../modules/parse_planner");
 const { parseGetParam } = require("../modules/parse_recipes");
 const Locales = require("../modules/locales");
+require("../modules/theme");
 
 const pgp = parseGetParam(location.search);
 

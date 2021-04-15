@@ -3,6 +3,7 @@ const getEl = require("../modules/getEl");
 const Locales = require("../modules/locales");
 const fs = require("fs");
 const { PLATFORM } = require("../modules/platform");
+require("../modules/theme");
 
 document.title = Locales.Pages.RecipeList;
 

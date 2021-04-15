@@ -1,4 +1,9 @@
 {
+	"Name": "English",
+	"Theme": [
+		"Light",
+		"Dark"
+	],
 	"Pages": {
 		"RecipeList": "Recipe list",
 		"ShowWeek": "Dish planner",
@@ -45,7 +50,12 @@
 		"Change": "Change",
 		"Save": "Save",
 
-		"ConfirmMessage": "Press OK to confirm."
+		"ConfirmMessage": "Press OK to confirm.",
+
+		"Options": "Options",
+		"LanguageMenu": "Language",
+		"ThemeMenu": "Theme",
+		"Quit": "Quit app"
 	},
 	"Elements": {
 		"DayNames": [

@@ -1,6 +1,7 @@
 const { loadRecipes, getRecipeIdByName, parseGetParam, saveRecipes } = require("../modules/parse_recipes");
 const getEl = require("../modules/getEl");
 const Locales = require("../modules/locales");
+require("../modules/theme");
 
 let recipes = loadRecipes();
 

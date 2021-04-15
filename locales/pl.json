@@ -1,4 +1,9 @@
 {
+	"Name": "Polski",
+	"Theme": [
+		"Jasna",
+		"Ciemna"
+	],
 	"Pages": {
 		"RecipeList": "Lista przepisów",
 		"ShowWeek": "Pokaż jadłospis",
@@ -45,7 +50,12 @@
 		"Password": "Hasło",
 		"Register": "Zarejestruj się",
 
-		"ConfirmMessage": "Naciśnij OK, aby potwierdzić."
+		"ConfirmMessage": "Naciśnij OK, aby potwierdzić.",
+
+		"Options": "Opcje",
+		"LanguageMenu": "Język",
+		"ThemeMenu": "Skórka",
+		"Quit": "Wyjście"
 	},
 	"Elements": {
 		"DayNames": [

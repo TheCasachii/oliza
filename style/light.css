@@ -136,3 +136,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 .pad {
     padding: 2%;
 }
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}

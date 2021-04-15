@@ -2,6 +2,7 @@ const { loadRecipes, getRecipeIdByName, parseGetParam } = require("../modules/pa
 const getEl = require("../modules/getEl");
 const { loadPlanner, PLANNER_DAYS } = require("../modules/parse_planner");
 const Locales = require("../modules/locales");
+require("../modules/theme");
 
 const recipes = loadRecipes();
 let planner   = loadPlanner();
