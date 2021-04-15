@@ -1,7 +1,8 @@
 const getEl = require("../modules/getEl");
 const { loadRecipes, getRecipeIdByName, saveRecipes, parseGetParam } = require("../modules/parse_recipes");
-const { CURRENT_THEME } = require("../modules/theme");
 const Locales = require("../modules/locales");
+
+require("../modules/theme");
 
 const RECIPE_NAME_ID = "rec-name";
 

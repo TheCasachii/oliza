@@ -3,6 +3,7 @@ const getEl = require("../modules/getEl");
 const { loadPlanner, showPlanner, savePlanner, emptyPlanner, PLANNER_DAYS } = require("../modules/parse_planner");
 const printJS = require("print-js");
 const Locales = require("../modules/locales");
+require("../modules/theme");
 
 let planner = loadPlanner();
 

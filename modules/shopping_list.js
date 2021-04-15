@@ -3,6 +3,7 @@ const { loadRecipes, getRecipeIdByName } = require("../modules/parse_recipes.js"
 const { loadPlanner } = require("../modules/parse_planner.js");
 const printJS = require("print-js");
 const Locales = require("../modules/locales.js");
+require("../modules/theme");
 
 const planner = loadPlanner();
 const recipes = loadRecipes();

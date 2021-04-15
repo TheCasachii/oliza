@@ -1,7 +1,7 @@
 
 const { app, BrowserWindow, Menu } = require("electron");
 const path = require("path");
-const fs = require("fs");
+const mainMenu = require("./modules/menu");
 
 function createWindow() {
 
@@ -42,4 +42,4 @@ app.on("activate", () => {
     }
 });
 
-Menu.setApplicationMenu(null);
+Menu.setApplicationMenu(mainMenu);

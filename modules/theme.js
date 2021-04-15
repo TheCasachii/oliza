@@ -1,10 +1,12 @@
+const Preferences = require("./preferences");
 
-let CURRENT_THEME = "dark";
+Preferences.init();
 
-function setTheme() {
-    
+if (Preferences.get("Theme") === 1)
+{
+    document.styleSheets[1].disabled = false;
 }
-
-module.exports = {
-    CURRENT_THEME
+else
+{
+    document.styleSheets[1].disabled = true;
 }
